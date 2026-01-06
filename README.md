@@ -1,3 +1,6 @@
+W&B: https://wandb.ai/mgorm36-western-governors-university/nyc_airbnb?nw=nwusermgorm36
+Github repo: https://github.com/m222g/Project-Build-an-ML-Pipeline-Starter
+
 # Build an ML Pipeline for Short-Term Rental Prices in NYC
 You are working for a property management company renting rooms and properties for short periods of 
 time on various rental platforms. You need to estimate the typical price for a given property based 
@@ -179,3 +182,4 @@ Please, make sure all steps are using **the same** python version and that you h
 ## License
 
 [License](LICENSE.txt)
+
