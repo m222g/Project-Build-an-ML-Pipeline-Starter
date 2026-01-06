@@ -1,4 +1,5 @@
 W&B: https://wandb.ai/mgorm36-western-governors-university/nyc_airbnb?nw=nwusermgorm36
+
 Github repo: https://github.com/m222g/Project-Build-an-ML-Pipeline-Starter
 
 # Build an ML Pipeline for Short-Term Rental Prices in NYC
@@ -182,4 +183,5 @@ Please, make sure all steps are using **the same** python version and that you h
 ## License
 
 [License](LICENSE.txt)
+
 
