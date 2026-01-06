@@ -33,13 +33,14 @@ def go(config: DictConfig):
     active_steps = steps_par.split(",") if steps_par != "all" else _steps
 
     # Move to a temporary directory
-    with tempfile.TemporaryDirectory() as tmp_dir:
+    with (tempfile.TemporaryDirectory() as tmp_dir):
 
         if "download" in active_steps:
             # Download file and load in W&B
             _ = mlflow.run(
                 f"{config['main']['components_repository']}/get_data",
                 "main",
+                version='main',
                 env_manager="conda",
                 parameters={
                     "sample": config["etl"]["sample"],
