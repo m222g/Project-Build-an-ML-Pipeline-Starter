@@ -67,13 +67,13 @@ def go(config: DictConfig):
 
         if "data_check" in active_steps:
             _ = mlflow.run(
-                f"{config['main']['components_repository']}/data_check",
+                f"{config['main']['components_repository']}/src/data_check",
                 "main",
                 env_manager="conda",
                 parameters={
                     "csv": "clean_sample.csv:latest",
                     "ref": "clean_sample.csv:reference",
-                    "kl_threshold": config["etl"]["kl_threshold"],
+                    "kl_threshold": config["data_check"]["kl_threshold"],
                     "min_price": config["etl"]["min_price"],
                     "max_price": config["etl"]["max_price"],
                 }
